@@ -1,0 +1,5 @@
+fetch('https://jsonplaceholder.typicode.com/todos/10')
+// 조회된 내용을 받기 -> json -> text 버전 text().json()
+// .then((response) => {return response.text()})
+.then(response => response.text())
+.then(result => {console.log(result)})
